@@ -1,0 +1,367 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(document).on("mobileinit", function () {
+                $.mobile.defaultPageTransition = "flow";
+            });
+        </script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <link href="css/header.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <!--      HOME     -->        
+        <div data-role="page" id="home">
+            <div data-role="header">
+                <h1 class="page-header">Welcome</h1>
+            </div>
+
+
+            <div data-role="content">
+                <a href="#brand-menu" data-transition="flip">
+                    <img src="images/logo_1.png" >
+                </a>                
+                <div class="ui-grid-b">
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b">
+                        <a href="#brand-menu" data-role="button" data-inline="true" 
+                           data-transition="flow" data-icon="bullets" data-iconpos="right">GO!</a>
+                    </div>
+                    <div class="ui-block-c"></div>                    
+                </div>
+            </div>
+
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; Lobster 2558</h1>
+            </div>
+        </div> 
+
+        <!--      brand menu     -->
+        <div data-role="page" id="brand-menu" class="bg-main">
+            <div data-role="header" data-position="fixed">
+                <h1 class="page-header">List Brand</h1>
+                <a href="#home" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>                    
+            </div>
+
+
+            <div data-role="content"> 
+                <div data-role="controlgroup">                    
+                    <a href="#nikon" data-role="button" data-icon="tag">NIKON</a>                  
+                    <a href="#canon" data-role="button" data-icon="tag">CANON</a>  
+                    <a href="#frm-input" data-role="button" data-icon="tag">SONY</a>  
+                    <a href="baac.html" data-role="button" data-icon="tag">OLYMPUS</a>
+                    <a href="test.php" data-role="button" data-icon="tag">TEST PHP</a>
+                    <a href="#list" data-role="button" data-icon="tag">TEST List</a>
+                    <a href="#aboutus" data-role="button" data-icon="phone" data-transition="slideup">About Us</a>
+                </div>          
+            </div> 
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; Lobster 2558</h1>
+            </div> 
+        </div>
+
+        <!--      NIKON     -->        
+        <div data-role="page" id="nikon">
+            <div data-role="header" data-add-back-btn="true">    
+                <h1 class="page-header">NIKON</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#canon">CANON</a></li>
+                        <li><a href="#sony">SONY</a></li>
+                        <li><a href="olympus">OLYMPUS</a></li>
+                    </ul>
+                </div>                 
+            </div>
+
+            <div data-role="content">       
+                <img src="images/Nikon.jpg">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a data-rel="popup" href="#nikspec">Specification</a></li>
+                        <li><a data-rel="popup" href="#nikprice">Price</a></li>
+                    </ul>
+                </div>   
+                <!--      NIKON SPEC & PRICE     -->        
+                <div data-role="popup" id="nikspec">
+                    <div data-role="header">
+                        <h1>Specification</h1>
+                        <a data-icon="delete" data-iconpos="notext" data-rel="back" class="ui-btn-right"></a>                
+                    </div>
+                    <div data-role="content">
+                        เซ็นเซอร์ 16.2MP FX-รูปแบบ CMOS • EXPEED 4 Image Processor • จอแอลซีดี 3.2 "921k-Dot • การบันทึกวิดีโอ Full HD 1080p ที่ 60 เฟรมต่อวินาที 
+                        • multi-CAM 3500FX 51-Point AF เซ็นเซอร์ • ISO 25600 , ขยายเวลาถึง ISO 409600 • 11 เฟรมต่อวินาทีสำหรับการถ่าย 200 Shots ด้วย AE / AF 
+                        • 91k-พิกเซลเซ็นเซอร์ RGB และGroup Area AF • รูปแบบ 14 บิต RAW ไฟล์และ 12 บิต RAWS • 1000 ฐานสนับสนุน-T Gigabit LAN แบบมีสาย
+                    </div>                        
+                </div>
+                <div data-role="popup" id="nikprice">
+                    <div data-role="header">
+                        <h1>Price</h1>
+                        <a data-icon="delete" data-iconpos="notext" data-rel="back" class="ui-btn-right"></a>                
+                    </div>
+                    <div data-role="content">
+                        Nikon D4S ประกันศูนย์ Body ราคา 207,000.00 บาท
+                    </div>                        
+                </div>            
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; Lobster 2558</h1>
+            </div>
+        </div>
+
+        <!--      CANON     -->        
+        <div data-role="page" id="canon">
+            <div data-role="header" data-add-back-btn="true">    
+                <h1 class="page-header">CANON</h1>
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#nikon">NIKON</a></li>
+                        <li><a href="#sony">SONY</a></li>
+                        <li><a href="#olympus">OLYMPUS</a></li>
+                    </ul>
+                </div>                 
+            </div>
+
+            <div data-role="content">          
+                <img src="images/canon.jpg">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a data-rel="popup" href="#canspec">Specification</a></li>
+                        <li><a data-rel="popup" href="#canprice">Price</a></li>
+                    </ul>
+                </div>   
+                <!--      NIKON SPEC & PRICE     -->        
+                <div data-role="popup" id="canspec">
+                    <div data-role="header">
+                        <h1>Specification</h1>
+                        <a data-icon="delete" data-iconpos="notext" data-rel="back" class="ui-btn-right"></a>                
+                    </div>
+                    <div data-role="content">
+                        Canon 5D Mark III กล้อง Full Frame ความละเอียด 22.3 ล้านพิกเซล (5D Mark II อยู่ที่ 21 ล้านพิกเซล) ที่มาพร้อมกับชิพประมวลผลรุ่นใหม่ 
+                        DIGIC 5+ ที่เร็วกว่า DIGIC 4 กว่า 17 เท่า เป็นสุดยอดกล้อง DSLR ที่ทีมคิดค้นพัฒนาของแคนนอนวิเคราะห์ 
+                        และศึกษาความต้องการของผู้ใช้งานกล้องระดับมืออาชีพอย่างละเอียด เพื่อให้ตอบโจทย์ผู้ใช้งานสูงสุด
+                    </div>                        
+                </div>   
+                <div data-role="popup" id="canprice">
+                    <div data-role="header">
+                        <h1>Price</h1>
+                        <a data-icon="delete" data-iconpos="notext" data-rel="back" class="ui-btn-right"></a>                
+                    </div>
+                    <div data-role="content">
+                        Canon EOS-5D Mark III
+                        ประกันร้าน(เงินสด) ราคา 76,900.00 บาท
+                        ประกันร้าน kit 24-105(เงินสด) ราคา 95,900.00 บาท
+                        ประกันศูนย์ Body (เงินสดมีจำนวนจำกัด) ราคา 78,900.00 บาท
+                        ประกันศูนย์ Kit 24-105L(เงินสดมีจำนวนจำกัด) ราคา 109,900.00 บาท
+                    </div>                        
+                </div>            
+
+            </div>
+
+            <div data-role="footer" data-position="fixed">
+                <h1>&COPY; Lobster 2558</h1>
+            </div>
+        </div>   
+
+        <section data-role="page" id="frm-input">
+            <header data-role="header"></header>
+            <div data-role="content">
+                <form id="frm1">
+                    <div class="ui-field-contain">
+                        <label for="txt-name">Name :</label>
+                        <input type="text" id="txt-name" placeholder="fill your name">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-pass">Password :</label>
+                        <input type="password" id="txt-pass">
+                    </div>            
+                    <div class="ui-field-contain">
+                        <label for="txt-mail">Email :</label>
+                        <input type="email" id="txt-mail">
+                    </div>     
+                    <div class="ui-field-contain">
+                        <label for="txt-url">Address :</label>
+                        <input type="url" id="txt-url">
+                    </div>  
+                    <div class="ui-field-contain">
+                        <label for="txt-tel">Telephone :</label>
+                        <input type="tel" id="txt-tel">
+                    </div>    
+                    <div class="ui-field-contain">
+                        <label for="txt-num">Number  :</label>
+                        <input type="number" id="txt-num" max="60" min="21">
+                    </div>            
+                    <div class="ui-field-contain">
+                        <label for="txt-url">Address :</label>
+                        <input type="url" id="txt-url">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-date">Birth Date :</label>
+                        <input type="date" id="txt-date">
+                    </div> 
+                    <div class="ui-field-contain">
+                        <label for="txt-time">Address :</label>
+                        <input type="time" id="txt-time">
+                    </div>  
+                    <div class="ui-field-contain">
+                        <label for="txt-week">Week :</label>
+                        <input type="week" id="txt-week">
+                    </div> 
+                    <div class="ui-field-contain">
+                        <label for="txt-search">Search :</label>
+                        <input type="search" id="txt-search">
+                    </div>            
+                    <div class="ui-field-contain">
+                        <label for="txt-area">Remark :</label>
+                        <textarea id="txt-area"></textarea>
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="txt-range">Range :</label>
+                        <input type="range" id="txt-range" min="10" max="50" step="5">
+                    </div>    
+                    <div class="ui-field-contain" data-role="controlgroup" >
+                        <label for="rdo1">Bangkok</label>
+                        <input type="radio" id="rdo1" name="rdprov">
+                        <label for="rdo2">Nonthaburi</label>
+                        <input type="radio" id="rdo2" name="rdprov">                
+                        <label for="rdo3">Pathumthanee</label> 
+                        <input type="radio" id="rdo3" name="rdprov">                
+                    </div>    
+                    <div class="ui-field-contain">
+                        <fieldset data-role="controlgroup">
+                            <label for="chkbox1">Bangkok</label>
+                            <input type="checkbox" id="chkbox1">
+                            <label for="chkbox2">Nonthaburi</label>
+                            <input type="checkbox" id="chkbox2">                
+                            <label for="chkbox3">Pathumthanee</label> 
+                            <input type="checkbox" id="chkbox3"> 
+                        </fieldset>               
+                    </div> 
+                    <div class="ui-field-contain" >
+                        <label for="sel1">province</label>
+                        <select id="sel1" data-native-menu="false" multiple="multiple">
+                            <option value="1">Bangkok</option>
+                            <option value="2">Nonthaburi</option>
+                            <option value="3">Pathumthanee</option>                    
+                        </select>
+                    </div>  
+                    <div class="ui-field-contain" >
+                        <label for="txt-color">Color</label>
+                        <input type="color" id="txt-color">
+                    </div>                 
+                </form>
+            </div>
+
+        </section>
+
+        <section data-role="page" id="list">
+            <header data-role="header" data-add-back-btn="true">
+                <h2>List</h2>
+                <a href="#home" data-role="button" data-icon="home" data-iconpos="notext" class="ui-btn-right"></a>           
+            </header>
+            <div data-role="content">
+                <ul data-role="listview" data-inset="true" id="lv1">
+                    <li><a>hello</a></li>
+                </ul>
+                <form class="ui-filterable">
+                    <input id="txt-autoc" data-type="search" />
+                </form>
+                <ul data-role="listview" data-filter="true" data-filter-reveal="true" data-input="#txt-autoc">
+                    <li>กทม</li>
+                    <li>นนทบุรี</li>
+                    <li>กำแพงเพชร</li>
+                    <li>นครสวรรค์</li>
+                </ul>
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h2>List</h2>
+                        <ul data-role="listview" data-inset="false" data-autodividers="true">
+                            <li data-icon="forward"><a href="">ALPHA</a></li>
+                            <li data-role="list-divider">----------</li>
+                            <li><a href="">BRAVO</a></li>
+                            <li><a href="">CHARLIE</a></li>
+                            <li><a href="">DELTA</a></li>
+                            <li data-icon="plus">
+                                <a href="">ECHO</a>
+                                <a href=""></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div data-role="collapsible">
+                        <h2>List2</h2>
+                        <ol data-role="listview" data-inset="false" data-split-icon="plus" data-filter="true">
+                            <li data-filtertext="ฉ">
+                                <a href="">
+                                    <img src="images/information.png" />
+                                    <h2>FOXTROT</h2>
+                                    <p>123456</p>
+                                </a>
+                                <a href=""></a>
+                            </li>
+                            <li data-filtertext="ช">
+                                <a href="">
+                                    GOLF
+                                    <p class="ui-li-aside ui-li-count">12</p>
+                                </a>
+                                <a href=""></a>
+                            </li>
+                            <li data-filtertext="ฌ"><a href="">HOTEL</a></li>
+                            <li data-filtertext="ญ"><a href="">INDIA</a></li>
+                            <li data-filtertext="ฏ"><a href="">JULIET</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--      ABOUT US     -->        
+        <div data-role="dialog" id="aboutus">
+            <div data-role="header">
+                <h1>about us</h1>
+            </div>
+            <div data-role="content">
+                Lobster @  NATHAPORN TADSEN TEL.0804144777  
+            </div>            
+        </div>
+        <script type="text/javascript">
+//            $(document).on("pageinit", "#home", function () {
+//                alert("Home init");
+//            });
+//            $(document).on("pagebeforeshow","#home",function(){
+//                alert("Page beforeshow");
+//            });
+//            $(document).on("pageshow","#home",function(){
+//                alert("Page show");
+//            });
+//            $(document).on("pageinit", "#aboutus", function () {
+//                alert("AB init");
+//            });
+//            $(document).on("pageshow","#aboutus",function(){
+//                alert("AB show");
+//            });
+            var brandService_url = "http://172.18.27.18/baac_services/brand_list.php";
+            var brands;
+
+            $("#list").on("pageinit", function () {
+                $("#lv1 li").remove();
+            });
+            $("#list").on("pagebeforeshow", function () {
+                $.getJSON(brandService_url, function (jsonData) {
+                    $("#lv1 li").remove();
+                    brands = jsonData.items;
+                    $.each(brands, function (index, getBrand) {
+                        $("#lv1").append("<li><a>" + getBrand.brand + "</a></li>");
+                    });
+                    $("#lv1").listview("refresh");
+                });
+            });
+        </script>
+    </body>
+</html>
